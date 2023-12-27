@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2023-12-27_15-52-19</title>
+    <style>
+        #report {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            border-bottom: 1px solid #eee;
+        }
+
+        table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid #dfe2e5;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f8f8f8;
+        }
+
+        a {
+            color: #4183C4;
+        }
+
+        pre {
+            padding: 8px;
+            border: 1px solid #dfe2e5;
+            border-radius: 3px;
+            font-size: 14px;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+<div id="report">
+<h1>Test Report</h1>
+<h2>Information</h2>
+<p>Start Time: 2023-12-27 15:52:08</p>
+<p>End Time: 2023-12-27 15:52:19</p>
+<p>Elapsed Time: 11.727s</p>
+<h2>Environment</h2>
+<p>Platform: Windows-10-10.0.22000-SP0</p>
+<p>Python: 3.9.0</p>
+<h2>Statistic</h2>
+<p>Total Count: 10</p>
+<p>Execute Rate: 90.00%</p>
+<p>Pass Rate: 44.44%</p>
+<table>
+<tr>
+<th style="color: green">Success</th>
+<th style="color: green">ExpectedFailure</th>
+<th style="color: blue">Skip</th>
+<th style="color: red">Error</th>
+<th style="color: red">Failure</th>
+<th style="color: red">UnexpectedSuccess</th>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+</tr>
+</table>
+<h2 id="Summary">Summary</h2>
+<table>
+<tr>
+<th>Status</th>
+<th>ID(file.class.method)</th>
+<th>Short Description</th>
+</tr>
+<tr>
+<td style="color: red">Error</td>
+<td><a href="#test_api.MyTestCase.test_get">test_api.MyTestCase.test_get</a></td>
+<td>接口测试示例代码(GET请求)</td>
+</tr>
+<tr>
+<td style="color: red">Failure</td>
+<td><a href="#test_data.MyTestCase.test_equal_2">test_data.MyTestCase.test_equal_2</a></td>
+<td>(data: 1)</td>
+</tr>
+<tr>
+<td style="color: red">Failure</td>
+<td><a href="#test_data.MyTestCase.test_multiply_2">test_data.MyTestCase.test_multiply_2</a></td>
+<td>(data: {&#x27;m&#x27;: 2, &#x27;n&#x27;: 2, &#x27;s&#x27;: 2})</td>
+</tr>
+<tr>
+<td style="color: red">Failure</td>
+<td><a href="#test_data.MyTestCase.test_plus_2">test_data.MyTestCase.test_plus_2</a></td>
+<td>测试前两个数的和是否等于第三个数(data: (4, 5, 6))</td>
+</tr>
+<tr>
+<td style="color: red">Failure</td>
+<td><a href="#test_demo.MyTestCase.test_something">test_demo.MyTestCase.test_something</a></td>
+<td></td>
+</tr>
+<tr>
+<td style="color: blue">Skip</td>
+<td><a href="#test_api.MyTestCase.test_post">test_api.MyTestCase.test_post</a></td>
+<td>接口测试示例代码(POST请求)</td>
+</tr>
+<tr>
+<td style="color: green">Success</td>
+<td>test_browser.MyTestCase.test_search</td>
+<td>浏览器自动化测试示例代码</td>
+</tr>
+<tr>
+<td style="color: green">Success</td>
+<td>test_data.MyTestCase.test_equal_1</td>
+<td>(data: 0)</td>
+</tr>
+<tr>
+<td style="color: green">Success</td>
+<td>test_data.MyTestCase.test_multiply_1</td>
+<td>(data: {&#x27;m&#x27;: 1, &#x27;n&#x27;: 1, &#x27;s&#x27;: 1})</td>
+</tr>
+<tr>
+<td style="color: green">Success</td>
+<td>test_data.MyTestCase.test_plus_1</td>
+<td>测试前两个数的和是否等于第三个数(data: (1, 2, 3))</td>
+</tr>
+</table>
+<h2>Detail</h2>
+<h3>Error</h3>
+<h4 id="test_api.MyTestCase.test_get">test_api.MyTestCase.test_get</h4>
+<pre>
+Traceback (most recent call last):
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py&quot;, line 711, in urlopen
+    self._prepare_proxy(conn)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py&quot;, line 1007, in _prepare_proxy
+    conn.connect()
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py&quot;, line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py&quot;, line 504, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\ssl_.py&quot;, line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\ssl_.py&quot;, line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\ssl.py&quot;, line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\ssl.py&quot;, line 1040, in _create
+    self.do_handshake()
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\ssl.py&quot;, line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1122)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py&quot;, line 489, in send
+    resp = conn.urlopen(
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py&quot;, line 798, in urlopen
+    retries = retries.increment(
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py&quot;, line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#x27;www.httpbin.org&#x27;, port=443): Max retries exceeded with url: /get (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1122)&#x27;)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;D:\PycharmProjects\cesi\Tests\demo\test_api.py&quot;, line 10, in test_get
+    response = requests.get(url)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py&quot;, line 73, in get
+    return request(&quot;get&quot;, url, params=params, **kwargs)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py&quot;, line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py&quot;, line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py&quot;, line 701, in send
+    r = adapter.send(request, **kwargs)
+  File &quot;C:\Users\My-PC\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py&quot;, line 563, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host=&#x27;www.httpbin.org&#x27;, port=443): Max retries exceeded with url: /get (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1122)&#x27;)))
+
+</pre>
+<p><a href="#Summary">Back to Summary</a></p>
+<h3>Failure</h3>
+<h4 id="test_data.MyTestCase.test_equal_2">test_data.MyTestCase.test_equal_2</h4>
+<pre>
+Traceback (most recent call last):
+  File &quot;D:\PycharmProjects\cesi\Tests\utils\data.py&quot;, line 7, in wrapper
+    return method(self, *args, **kwargs)
+  File &quot;D:\PycharmProjects\cesi\Tests\demo\test_data.py&quot;, line 13, in test_equal
+    self.assertEqual(0, n)
+AssertionError: 0 != 1
+
+</pre>
+<p><a href="#Summary">Back to Summary</a></p>
+<h4 id="test_data.MyTestCase.test_multiply_2">test_data.MyTestCase.test_multiply_2</h4>
+<pre>
+Traceback (most recent call last):
+  File &quot;D:\PycharmProjects\cesi\Tests\utils\data.py&quot;, line 7, in wrapper
+    return method(self, *args, **kwargs)
+  File &quot;D:\PycharmProjects\cesi\Tests\demo\test_data.py&quot;, line 28, in test_multiply
+    self.assertEqual(m * n, s)
+AssertionError: 4 != 2
+
+</pre>
+<p><a href="#Summary">Back to Summary</a></p>
+<h4 id="test_data.MyTestCase.test_plus_2">test_data.MyTestCase.test_plus_2</h4>
+<pre>
+Traceback (most recent call last):
+  File &quot;D:\PycharmProjects\cesi\Tests\utils\data.py&quot;, line 7, in wrapper
+    return method(self, *args, **kwargs)
+  File &quot;D:\PycharmProjects\cesi\Tests\demo\test_data.py&quot;, line 21, in test_plus
+    self.assertEqual(a + b, c)
+AssertionError: 9 != 6
+
+</pre>
+<p><a href="#Summary">Back to Summary</a></p>
+<h4 id="test_demo.MyTestCase.test_something">test_demo.MyTestCase.test_something</h4>
+<pre>
+Traceback (most recent call last):
+  File &quot;D:\PycharmProjects\cesi\Tests\demo\test_demo.py&quot;, line 6, in test_something
+    self.assertEqual(True, False)  # add assertion here
+AssertionError: True != False
+
+</pre>
+<p><a href="#Summary">Back to Summary</a></p>
+<h3>Skip</h3>
+<h4 id="test_api.MyTestCase.test_post">test_api.MyTestCase.test_post</h4>
+<p>Reason: Do not test this case</p>
+<p><a href="#Summary">Back to Summary</a></p>
+</div>
+</body>
+</html>
