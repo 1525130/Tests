@@ -1,0 +1,11 @@
+venv/
+.idea/
+*.pyc
+*.xlsx
+*.log
+logs/
+caches/
+.DS_Store
+*.lprof
+temp/
+config/
